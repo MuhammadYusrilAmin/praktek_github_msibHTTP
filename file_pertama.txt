@@ -1,0 +1,6 @@
+Rincian Materi Pelatihan
+1. HTML dan CSS
+2. JS
+3. Github
+4. PHP
+5. Mysql
