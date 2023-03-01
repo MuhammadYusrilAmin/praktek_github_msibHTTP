@@ -4,3 +4,4 @@ Rincian Materi Pelatihan
 3. Github
 4. PHP
 5. Mysql
+6. final project
