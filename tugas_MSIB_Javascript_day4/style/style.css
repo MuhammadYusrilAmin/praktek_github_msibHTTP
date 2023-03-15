@@ -1,3 +1,45 @@
+* {
+    background-color: #DEB887;
+}
+
+table {
+    width: 30%;
+    padding: 15px;
+    background-color: #fff;
+}
+
+tr,
+td {
+    background-color: #fff;
+}
+
+input {
+    width: 92%;
+    height: 30px;
+    border: 1px solid #A9A9A9;
+    background-color: #fff;
+    margin: 3px 5px;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+
 button {
-    width: 100%;
+    width: 96%;
+    height: 30px;
+    border: 1px solid #A9A9A9;
+    background-color: #A9A9A9;
+    opacity: 0.8;
+    box-shadow: 1.5px 1.5px #000;
+    margin: 10px 5px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 1;
 }

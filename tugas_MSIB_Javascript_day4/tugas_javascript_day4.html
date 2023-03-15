@@ -10,23 +10,17 @@
 </head>
 
 <body>
-    <h1 align="center"> Form Input Javascript</h1>
+    <h1 align="center"> Kalkulator Javascript</h1>
     <form action="" id="kalkulator">
-        <table border="1" align="center">
+        <table align="center">
             <tr>
-                <td><label for="">Angka 1 </label></td>
-                <td>:</td>
-                <td><input type="text" name="angka" placeholder="Masukkan angka pertama"></td>
+                <td colspan="3"><input type="number" name="angka" placeholder="Masukkan angka pertama"></td>
             </tr>
             <tr>
-                <td><label for="">Angka 2</label></td>
-                <td>:</td>
-                <td><input type="text" name="angka2" placeholder="Masukkan angka kedua"></td>
+                <td colspan="3"><input type="number" name="angka2" placeholder="Masukkan angka kedua"></td>
             </tr>
             <tr>
-                <td><label for="">Hasil</label></td>
-                <td>:</td>
-                <td><input type="text" name="hasil" placeholder="hasil" readonly></td>
+                <td colspan="3"><input type="number" name="hasil" placeholder="Output Hasil" readonly></td>
             </tr>
             <tr>
                 <td colspan="3">
@@ -50,7 +44,7 @@
             </tr>
             <tr>
                 <td colspan="3">
-                    <button type="button" onclick="pangkat()">x<sub>2</sub></button>
+                    <button type="button" onclick="pangkat()">x<sup>2</sup></button>
                 </td>
             </tr>
         </table>
