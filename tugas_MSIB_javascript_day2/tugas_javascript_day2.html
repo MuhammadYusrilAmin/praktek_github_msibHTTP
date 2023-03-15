@@ -1,0 +1,39 @@
+<script>
+    let pegawai = "Muhammad Yusril Amin";
+    let jabatan = "Manager";
+    let status = "belum menikah";
+
+    // struktur kendalinya
+    switch (jabatan) {
+        case 'Manager':
+            gaji_pokok = 10000000;
+            break;
+        case 'Asisten manager':
+            gaji_pokok = 8000000;
+            break;
+        case 'Staff':
+            gaji_pokok = 5000000;
+            break;
+        default:
+            gaji_pokok = 0;
+            break;
+    }
+
+    let tunjangan_jabatan = 0.1 * gaji_pokok;
+    let BPJS = 0.1 * gaji_pokok;
+
+    if (status == 'menikah') tunjangan_menikah = 0.1 * gaji_pokok;
+    else tunjangan_menikah = 0;
+
+    let total_pendapatan = gaji_pokok + tunjangan_jabatan + BPJS + tunjangan_menikah;
+
+    document.write("<center> <h2>Data Pegawai</h2> <hr>" +
+        "<br> Nama : " + pegawai +
+        "<br> Jabatan : " + jabatan +
+        "<br> Gaji Pokok : " + gaji_pokok +
+        "<br> Status : " + status +
+        "<br> Jumlah Tunjangan Jabatan : " + tunjangan_jabatan +
+        "<br> Jumlah BPJS : " + BPJS +
+        "<br> Jumlah Tunjangan Menikah : " + tunjangan_menikah +
+        "<br> Total Pendapatan : " + total_pendapatan + "</center>");
+</script>

@@ -1,0 +1,173 @@
+h2.logo {
+    color: white;
+}
+
+.judul {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+}
+
+#nav ul {
+    position: absolute;
+    right: 5%;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+#nav ul a:link,
+a:visited {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+#sidebar ul a:hover,
+a:active {
+    color: #18d26e;
+}
+
+#sidebar ul {
+    position: absolute;
+    left: -20%;
+    font-weight: bold;
+    list-style: none;
+    padding-top: 10px;
+}
+
+#sidebar ul li {
+    padding-bottom: 10%;
+}
+
+#sidebar ul a:link,
+a:visited {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+#sidebar ul a:hover,
+a:active {
+    color: #18d26e;
+}
+
+
+h1.content1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: white;
+}
+
+p.content1 {
+    margin-left: 5%;
+    text-align: justify;
+    color: white;
+
+}
+
+#content2 h1 {
+    text-align: center;
+    color: black;
+}
+
+#content2 hr {
+    width: 30%;
+    height: 2px;
+    background-color: #18d26e;
+    text-align: center;
+}
+
+#content2 p {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 16px;
+}
+
+#content2 {
+    margin-top: 3%;
+    text-align: justify;
+    color: white;
+    color: black;
+}
+
+#content3 h1,
+h2 {
+    text-align: center;
+    color: black;
+}
+
+#content3 hr {
+    width: 30%;
+    height: 2px;
+    margin-bottom: 1%;
+    background-color: #18d26e;
+    text-align: center;
+}
+
+#content3 p {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 16px;
+}
+
+#content3 {
+    margin-top: 3%;
+    text-align: justify;
+    color: white;
+    color: black;
+}
+
+p,
+h1 {
+    text-align: justify;
+    padding-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    padding-right: 60px;
+    font-size: 14px;
+}
+
+b {
+    font-size: 16px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 0px 4px 4px lightgray;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 1%;
+    padding: 5%;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    font-size: 14.5px;
+}
+
+.card .content {
+    display: block;
+}
+
+.card .content p {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.card .content b {
+    font-size: 20px;
+
+}

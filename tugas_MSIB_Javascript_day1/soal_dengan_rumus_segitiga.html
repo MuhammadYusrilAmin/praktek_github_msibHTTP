@@ -1,0 +1,25 @@
+<script>
+    // Membuat Variable dengan Menyimpan sisi  dan tinggi segitiga
+    var sisi_AB = 45;
+    var sisi_BC = 45;
+    var sisi_AC = 70;
+    var t = 35;
+
+    //membuat variable untuk menyimpan nilai Keliling dan nilai Luas
+    var luas = (sisi_AC * t) / 2;
+    var keliling = sisi_AB + sisi_BC + sisi_AC;
+
+
+    document.write('<h3 align="center">Soal Tugas Javascript</h3>');
+    document.write('<hr>');
+    document.write('Hitunglah Luas dan Keliling sebuah bangun datar segitiga sama kaki dengan nilai sisi AB ' +
+        sisi_AB + ' cm, sisi BC ' + sisi_BC + ' cm, sisi AC ' + sisi_AC + ' cm dan nilai tinggi ' + t + ' cm');
+    document.write('<br><b>Diketahui</b><br> Nilai sisi AB : ' + sisi_AB + ' cm');
+    document.write('<br> Nilai sisi BC : ' + sisi_BC + ' cm');
+    document.write('<br> Nilai sisi AC : ' + sisi_AC + ' cm');
+    document.write('<br> Nilai Alas : ' + sisi_AC + ' cm');
+    document.write('<br> Nilai Tinggi : ' + t + ' cm</br>');
+    document.write('<br><b>Dijawab</b><br> Nilai Luas  : ' +
+        luas + ' cm');
+    document.write('<br> Nilai Keliling : ' + keliling + ' cm');
+</script>

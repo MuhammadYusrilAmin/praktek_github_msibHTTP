@@ -1,0 +1,90 @@
+<script>
+    let p1 = {
+        nama: "Muhammad",
+        nilai: 90
+    };
+    let p2 = {
+        nama: "angga",
+        nilai: 75
+    };
+    let p3 = {
+        nama: "riski",
+        nilai: 55
+    };
+    let p4 = {
+        nama: "subhan",
+        nilai: 69
+    };
+    let p5 = {
+        nama: "Yusril",
+        nilai: 88
+    };
+
+    let person = [p1, p2, p3, p4, p5];
+</script>
+<h3 align="center">Tugas Javascript Array</h3>
+<table width="100%" align="center" cellpadding="10">
+    <thead>
+        <tr bgcolor="#FFA07A">
+            <th>No</th>
+            <th>Nama</th>
+            <th>Nilai</th>
+            <th>Grade</th>
+            <th>Predikat</th>
+            <th>Ket</th>
+        </tr>
+    </thead>
+    <tbody>
+        <script>
+            var no = 1;
+            let grade, predikat, color = "";
+
+            for (p of person) {
+                if (p.nilai >= 90 && p.nilai <= 100) grade = "A";
+                else if (p.nilai >= 80 && p.nilai < 90) grade = "B";
+                else if (p.nilai >= 70 && p.nilai < 80) grade = "C";
+                else if (p.nilai >= 60 && p.nilai < 70) grade = "D";
+                else if (p.nilai < 60) grade = "E";
+                else grade = "";
+
+                switch (grade) {
+                    case "A":
+                        predikat = "Sangat Baik";
+                        break;
+                    case "B":
+                        predikat = "Baik";
+                        break;
+                    case "C":
+                        predikat = "Cukup";
+                        break;
+                    case "D":
+                        predikat = "Kurang";
+                        break;
+                    case "E":
+                        predikat = "Sangat Kurang";
+                        break;
+                    default:
+                        predikat = "Grade Tidak Ditemukan";
+                        break;
+                }
+
+                let ket = (p.nilai >= 60) ? 'Lulus' : 'Gagal';
+
+                if (no % 2 == 0) {
+                    color = "Bisque";
+                } else {
+                    color = "Chartreuse";
+                }
+
+                document.write(`<tr bgcolor="${color}" align="center">
+                    <td>${no++}</td>
+                    <td>${p.nama}</td>
+                    <td>${p.nilai}</td>
+                    <td>${grade}</td>
+                    <td>${predikat}</td>
+                    <td>${ket}</td>
+                    </tr>`);
+            }
+        </script>
+    </tbody>
+</table>
