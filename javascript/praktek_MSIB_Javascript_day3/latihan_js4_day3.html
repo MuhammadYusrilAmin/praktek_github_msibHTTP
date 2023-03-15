@@ -1,0 +1,52 @@
+<script>
+    // array atau object
+    // atau array di dalam array
+    // atau arraynya yang menyimpan array
+
+    let p1 = {
+        nama: "Muhammad",
+        nilai: 80
+    };
+    let p2 = {
+        nama: "angga",
+        nilai: 75
+    };
+    let p3 = {
+        nama: "riski",
+        nilai: 85
+    };
+    let p4 = {
+        nama: "subhan",
+        nilai: 90
+    };
+
+    let person = [p1, p2, p3, p4];
+</script>
+<h3>Coba array</h3>
+<table width="100%" align="center" cellpadding="10">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Nilai</th>
+            <th>Ket</th>
+        </tr>
+    </thead>
+    <tbody>
+        <script>
+            var no = 1;
+            for (p of person) {
+                let ket = (p.nilai >= 60) ? 'Lulus' : 'gagal';
+
+                //set grade  A-E (menggunakan if multiondisi)
+                //
+                document.write(`<tr bgcolor="" align="center">
+                    <td>${no++}</td>
+                    <td>${p.nama}</td>
+                    <td>${p.nilai}</td>
+                    <td>${ket}</td>
+                    </tr>`);
+            }
+        </script>
+    </tbody>
+</table>

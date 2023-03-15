@@ -1,0 +1,3 @@
+file pertama dari branch ke 3
+saya menambahkan text baru pada file pertama di branch 3 ini
+saya menambahkan text baru setelah proses merge di branch master ini

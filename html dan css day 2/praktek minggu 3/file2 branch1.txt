@@ -1,0 +1,3 @@
+ini adalah file kedua dari branch 1
+saya menambahkan text baru pada file kedua di branch 1 ini
+saya menambahkan text baru setelah proses merge pada branch master 
