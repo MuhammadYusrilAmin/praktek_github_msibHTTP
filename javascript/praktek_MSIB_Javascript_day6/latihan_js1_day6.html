@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.js"></script>
+    l
+</head>
+
+<body>
+    <h3 id="panggil_id">Selamat Belajar Jquery menggunakan pemanggilan ID</h3>
+    <h3 id="panggil_class">Selamat Belajar Jquery menggunakan pemanggilan class</h3>
+    <p>aku kan menghilang</p>
+    <input type="button" value="salam">
+    <script>
+        $(document).ready(function () {
+
+            // pembuatan jquery dengan pemanggilan selector tag
+            $("input").click(function () {
+                alert("Selamat Belajar Jquery");
+            })
+            // pemanggilan jquery menggunakna id
+            $('#panggil_id').css('color', 'red');
+            // pemanggilan jquery menggunakna class
+            $('#panggil_class').css('color', 'orange');
+            //menggunakan effect
+            $('p').hide(900);
+            $('p').slideDown(300);
+        })
+    </script>
+    <!-- jquery menggunakan link offline -->
+</body>
+
+</html>
