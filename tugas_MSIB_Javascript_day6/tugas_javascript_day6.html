@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript Day 6</title>
+</head>
+
+<body bgcolor="">
+    <div id="style1" style="float: center;">
+        <img src="assets/image/logo.jpg" width="50%" alt="" id="logo">
+        <img src="assets/image/img1.jpg" width="33%" alt="" id="gbr1">
+        <img src="assets/image/img2.jpeg" width="33%" alt="" id="gbr2">
+        <img src="assets/image/img3.png" width="33%" alt="" id="gbr3"><br>
+        <button id="home">Home</button>
+        <button id="show_content">Show Content</button>
+        <button id="hide_all">Hide All</button>
+    </div>
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#gbr1').css('display', 'none');
+            $('#gbr2').css('display', 'none');
+            $('#gbr3').css('display', 'none');
+            $('#logo').click(function () {
+                $('#logo').hide(300);
+                $('#gbr1').slideDown(300);
+                $('#gbr2').slideDown(300);
+                $('#gbr3').slideDown(300);
+            });
+
+            $('#gbr1').click(function () {
+                $('#gbr1').hide(300);
+            });
+
+            $('#gbr2').click(function () {
+                $('#gbr2').hide(300);
+            });
+
+            $('#gbr3').click(function () {
+                $('#gbr3').hide(300);
+            });
+
+            $('#home').click(function () {
+                $('#logo').slideDown(300);
+                $('#gbr1').hide(300);
+                $('#gbr2').hide(300);
+                $('#gbr3').hide(300);
+            });
+
+            $('#show_content').click(function () {
+                $('#logo').hide(300);
+                $('#gbr1').slideDown(300);
+                $('#gbr2').slideDown(300);
+                $('#gbr3').slideDown(300);
+            });
+
+            $('#hide_all').click(function () {
+                $('#logo').hide(300);
+                $('#gbr1').hide(300);
+                $('#gbr2').hide(300);
+                $('#gbr3').hide(300);
+            });
+        });
+    </script>
+</body>
+
+</html>
