@@ -1,6 +1,6 @@
 <?php
-$obj_pelanggan = new Pelanggan();
-$data_pelanggan = $obj_pelanggan->dataPelanggan();
+$obj_pesanan = new Pesanan();
+$data_pesanan = $obj_pesanan->dataPesanan();
 
 ?>
 <form class="mt-4" action="controller/pesananController.php" method="POST">
@@ -14,6 +14,12 @@ $data_pelanggan = $obj_pelanggan->dataPelanggan();
         <label for="text4" class="col-4 col-form-label">Tanggal</label>
         <div class="col-8">
             <input id="tanggal" name="tanggal" type="date" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="text4" class="col-4 col-form-label">total</label>
+        <div class="col-8">
+            <input id="total" name="total" type="number" class="form-control" value="<?= $pesanan['total'] ?>">
         </div>
     </div>
     <div class="form-group row">

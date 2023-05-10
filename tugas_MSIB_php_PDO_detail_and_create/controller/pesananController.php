@@ -6,11 +6,13 @@ include_once '../models/pesanan.php';
 // step pertama yaitu menangkap requeest form
 $tanggal = $_POST['tanggal'];
 $pelanggan_id = $_POST['pelanggan_id'];
+$total = $_POST['total'];
+
 
 // menangkap form diatas dijadikan array
 $data = [
     $tanggal,
-    0,
+    $total,
     $pelanggan_id,
 ];
 $model = new Pesanan();
